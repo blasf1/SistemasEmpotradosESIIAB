@@ -1,0 +1,40 @@
+# MPLAB IDE generated this makefile for use with Microsoft `nmake'.
+# Project: MCHPUSB.mcp
+# Date: Tue Jan 02 02:41:18 2018
+
+AS = MPASMWIN.exe
+CC = mcc18.exe
+LD = mplink.exe
+AR = mplib.exe
+RM = del
+
+"C:\firmwareUSB\usbapp\_output\MCHPUSB.cof" : "C:\firmwareUSB\usbapp\_output\main.o" "C:\firmwareUSB\usbapp\_output\usbmmap.o" "C:\firmwareUSB\usbapp\_output\usbdrv.o" "C:\firmwareUSB\usbapp\_output\usb9.o" "C:\firmwareUSB\usbapp\_output\usbdsc.o" "C:\firmwareUSB\usbapp\_output\usbctrltrf.o" "C:\firmwareUSB\usbapp\_output\user.o" "C:\firmwareUSB\usbapp\_output\usbgen.o"
+	$(LD) /p18F4550 /l"C:\mcc18\lib" /k"C:\firmwareUSB\usbapp" "rm18f4550.lkr" "C:\firmwareUSB\usbapp\_output\main.o" "C:\firmwareUSB\usbapp\_output\usbmmap.o" "C:\firmwareUSB\usbapp\_output\usbdrv.o" "C:\firmwareUSB\usbapp\_output\usb9.o" "C:\firmwareUSB\usbapp\_output\usbdsc.o" "C:\firmwareUSB\usbapp\_output\usbctrltrf.o" "C:\firmwareUSB\usbapp\_output\user.o" "C:\firmwareUSB\usbapp\_output\usbgen.o" /u_CRUNTIME /u_DEBUG /z__MPLAB_BUILD=1 /z__MPLAB_DEBUG=1 /m"C:\firmwareUSB\usbapp\_output\MCHPUSB.map" /o"C:\firmwareUSB\usbapp\_output\MCHPUSB.cof"
+
+"C:\firmwareUSB\usbapp\_output\main.o" : "main.c" "system\usb\usbdrv\usbdrv.h" "system\usb\class\generic\usbgen.h" "main.c" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\p18cxxx.h" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\p18f4550.h" "system\typedefs.h" "system\usb\usb.h" "autofiles\usbcfg.h" "system\usb\usbdefs\usbdefs_std_dsc.h" "autofiles\usbdsc.h" "system\usb\usbdefs\usbdefs_ep0_buff.h" "system\usb\usbmmap.h" "system\usb\usbctrltrf\usbctrltrf.h" "system\usb\usb9\usb9.h" "io_cfg.h" "system\usb\usb_compile_time_validation.h" "user\user.h"
+	$(CC) -p=18F4550 /i"C:\firmwareUSB\usbapp" "main.c" -fo="C:\firmwareUSB\usbapp\_output\main.o" -D__DEBUG -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"C:\firmwareUSB\usbapp\_output\usbmmap.o" : "system\usb\usbmmap.c" "system\usb\usbdrv\usbdrv.h" "system\usb\class\generic\usbgen.h" "system\usb\usbmmap.c" "system\typedefs.h" "system\usb\usb.h" "autofiles\usbcfg.h" "system\usb\usbdefs\usbdefs_std_dsc.h" "autofiles\usbdsc.h" "system\usb\usbdefs\usbdefs_ep0_buff.h" "system\usb\usbmmap.h" "system\usb\usbctrltrf\usbctrltrf.h" "system\usb\usb9\usb9.h"
+	$(CC) -p=18F4550 /i"C:\firmwareUSB\usbapp" "system\usb\usbmmap.c" -fo="C:\firmwareUSB\usbapp\_output\usbmmap.o" -D__DEBUG -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"C:\firmwareUSB\usbapp\_output\usbdrv.o" : "system\usb\usbdrv\usbdrv.c" "system\usb\usbdrv\usbdrv.h" "system\usb\class\generic\usbgen.h" "system\usb\usbdrv\usbdrv.c" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\p18cxxx.h" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\p18f4550.h" "system\typedefs.h" "system\usb\usb.h" "autofiles\usbcfg.h" "system\usb\usbdefs\usbdefs_std_dsc.h" "autofiles\usbdsc.h" "system\usb\usbdefs\usbdefs_ep0_buff.h" "system\usb\usbmmap.h" "system\usb\usbctrltrf\usbctrltrf.h" "system\usb\usb9\usb9.h" "io_cfg.h"
+	$(CC) -p=18F4550 /i"C:\firmwareUSB\usbapp" "system\usb\usbdrv\usbdrv.c" -fo="C:\firmwareUSB\usbapp\_output\usbdrv.o" -D__DEBUG -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"C:\firmwareUSB\usbapp\_output\usb9.o" : "system\usb\usb9\usb9.c" "system\usb\usbdrv\usbdrv.h" "system\usb\class\generic\usbgen.h" "system\usb\usb9\usb9.c" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\p18cxxx.h" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\p18f4550.h" "system\typedefs.h" "system\usb\usb.h" "autofiles\usbcfg.h" "system\usb\usbdefs\usbdefs_std_dsc.h" "autofiles\usbdsc.h" "system\usb\usbdefs\usbdefs_ep0_buff.h" "system\usb\usbmmap.h" "system\usb\usbctrltrf\usbctrltrf.h" "system\usb\usb9\usb9.h" "io_cfg.h"
+	$(CC) -p=18F4550 /i"C:\firmwareUSB\usbapp" "system\usb\usb9\usb9.c" -fo="C:\firmwareUSB\usbapp\_output\usb9.o" -D__DEBUG -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"C:\firmwareUSB\usbapp\_output\usbdsc.o" : "autofiles\usbdsc.c" "system\usb\usbdrv\usbdrv.h" "system\usb\class\generic\usbgen.h" "autofiles\usbdsc.c" "system\typedefs.h" "system\usb\usb.h" "autofiles\usbcfg.h" "system\usb\usbdefs\usbdefs_std_dsc.h" "autofiles\usbdsc.h" "system\usb\usbdefs\usbdefs_ep0_buff.h" "system\usb\usbmmap.h" "system\usb\usbctrltrf\usbctrltrf.h" "system\usb\usb9\usb9.h"
+	$(CC) -p=18F4550 /i"C:\firmwareUSB\usbapp" "autofiles\usbdsc.c" -fo="C:\firmwareUSB\usbapp\_output\usbdsc.o" -D__DEBUG -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"C:\firmwareUSB\usbapp\_output\usbctrltrf.o" : "system\usb\usbctrltrf\usbctrltrf.c" "system\usb\usbdrv\usbdrv.h" "system\usb\class\generic\usbgen.h" "system\usb\usbctrltrf\usbctrltrf.c" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\p18cxxx.h" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\p18f4550.h" "system\typedefs.h" "system\usb\usb.h" "autofiles\usbcfg.h" "system\usb\usbdefs\usbdefs_std_dsc.h" "autofiles\usbdsc.h" "system\usb\usbdefs\usbdefs_ep0_buff.h" "system\usb\usbmmap.h" "system\usb\usbctrltrf\usbctrltrf.h" "system\usb\usb9\usb9.h"
+	$(CC) -p=18F4550 /i"C:\firmwareUSB\usbapp" "system\usb\usbctrltrf\usbctrltrf.c" -fo="C:\firmwareUSB\usbapp\_output\usbctrltrf.o" -D__DEBUG -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"C:\firmwareUSB\usbapp\_output\user.o" : "user\user.c" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\usart.h" "system\usb\usbdrv\usbdrv.h" "system\usb\class\generic\usbgen.h" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\spi.h" "user\user.c" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\p18cxxx.h" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\p18f4550.h" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\pconfig.h" "system\typedefs.h" "system\usb\usb.h" "autofiles\usbcfg.h" "system\usb\usbdefs\usbdefs_std_dsc.h" "autofiles\usbdsc.h" "system\usb\usbdefs\usbdefs_ep0_buff.h" "system\usb\usbmmap.h" "system\usb\usbctrltrf\usbctrltrf.h" "system\usb\usb9\usb9.h" "io_cfg.h" "user\user.h"
+	$(CC) -p=18F4550 /i"C:\firmwareUSB\usbapp" "user\user.c" -fo="C:\firmwareUSB\usbapp\_output\user.o" -D__DEBUG -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"C:\firmwareUSB\usbapp\_output\usbgen.o" : "system\usb\class\generic\usbgen.c" "system\usb\usbdrv\usbdrv.h" "system\usb\class\generic\usbgen.h" "system\usb\class\generic\usbgen.c" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\p18cxxx.h" "C:\Archivos de programa\Microchip\mplabc18\v3.47\h\p18f4550.h" "system\typedefs.h" "system\usb\usb.h" "autofiles\usbcfg.h" "system\usb\usbdefs\usbdefs_std_dsc.h" "autofiles\usbdsc.h" "system\usb\usbdefs\usbdefs_ep0_buff.h" "system\usb\usbmmap.h" "system\usb\usbctrltrf\usbctrltrf.h" "system\usb\usb9\usb9.h"
+	$(CC) -p=18F4550 /i"C:\firmwareUSB\usbapp" "system\usb\class\generic\usbgen.c" -fo="C:\firmwareUSB\usbapp\_output\usbgen.o" -D__DEBUG -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"clean" : 
+	$(RM) "C:\firmwareUSB\usbapp\_output\main.o" "C:\firmwareUSB\usbapp\_output\usbmmap.o" "C:\firmwareUSB\usbapp\_output\usbdrv.o" "C:\firmwareUSB\usbapp\_output\usb9.o" "C:\firmwareUSB\usbapp\_output\usbdsc.o" "C:\firmwareUSB\usbapp\_output\usbctrltrf.o" "C:\firmwareUSB\usbapp\_output\user.o" "C:\firmwareUSB\usbapp\_output\usbgen.o" "C:\firmwareUSB\usbapp\_output\MCHPUSB.cof" "C:\firmwareUSB\usbapp\_output\MCHPUSB.hex" "C:\firmwareUSB\usbapp\_output\MCHPUSB.cod" "C:\firmwareUSB\usbapp\_output\MCHPUSB.lst" "C:\firmwareUSB\usbapp\_output\MCHPUSB.map"
+
